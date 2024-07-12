@@ -11,6 +11,14 @@ def is_enabled(value, default):
     else:
         return default
 
+some_string = os.environ.get('SOME_ENV_VARIABLE', '')
+try:
+    some_value = int(some_string)
+except ValueError:
+    print(f"Conversion error: '{some_string}' is not a valid integer.")
+    # Handle the error appropriately
+    some_value = 0  # or raise a more descriptive error, or other appropriate handling
+
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', ''))
