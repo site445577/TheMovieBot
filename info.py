@@ -12,7 +12,7 @@ def is_enabled(value, default):
         return default
 
 if some_value.isdigit():
-    number = int(some_value)
+    number = int(30)
 else:
     # Handle the case where some_value is not a valid integer
     number = 0  # or some other default value or error handling
