@@ -54,12 +54,6 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
-# Verify
-VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-import os
-
-HOWTOVERIFY = os.environ.get('HOWTOVERIFY', 'https://t.me/+hRIHC9XK-qI2ODIx') # How to open tutorial link for verification
-
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantearn.in')
