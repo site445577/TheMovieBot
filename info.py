@@ -11,6 +11,30 @@ def is_enabled(value, default):
     else:
         return default
 
+if some_value.isdigit():
+    number = int(some_value)
+else:
+    # Handle the case where some_value is not a valid integer
+    number = 0  # or some other default value or error handling
+
+
+def convert_to_int(value):
+    try:
+        return int(value)
+    except ValueError:
+        return None  # or some other appropriate error handling
+
+input_value = ""  # This should be the value causing the error
+result = convert_to_int(input_value)
+if result is None:
+    print("Invalid input, could not convert to integer.")
+else:
+    print(f"Converted value: {result}")
+
+
+
+
+
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', ''))
