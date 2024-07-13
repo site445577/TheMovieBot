@@ -12,7 +12,7 @@ def is_enabled(value, default):
         return default
 
 
-
+PREMIUM_LOGS
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
