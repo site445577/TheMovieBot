@@ -11,7 +11,7 @@ def is_enabled(value, default):
     else:
         return default
 
-
+VERIFY
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
