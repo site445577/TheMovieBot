@@ -17,6 +17,15 @@ from database.connections_mdb import active_connection
 import re, asyncio, os, sys
 import json
 import base64
+
+import time
+
+# Replace 2481 with the actual wait time specified by Telegram
+wait_time_seconds = 2481
+
+time.sleep(wait_time_seconds)
+
+
 logger = logging.getLogger(__name__)
 
 TIMEZONE = "Asia/Kolkata"
