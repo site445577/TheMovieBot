@@ -87,7 +87,7 @@ class ByteStreamer:
 
                     try:
                         await media_session.send(
-                            raw.functions.auth.ImportAuthorization(
+                            raw.functions.auth.ImportBotAuthorization(
                                 id=exported_auth.id, bytes=exported_auth.bytes
                             )
                         )
